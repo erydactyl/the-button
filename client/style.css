@@ -1,0 +1,368 @@
+.body {
+	background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-card-base {
+	position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+}
+
+.main-card {
+	background-color: #fff;
+    border-radius: 5%;
+    color: #000;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.title {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.title-text {
+	font-weight: lighter;
+    font-size: 32px;
+	cursor: default;
+	user-select: none;
+}
+
+.title-subtitle {
+	cursor: default;
+	user-select: none;
+}
+
+.rank-none, .rank-purple, .rank-blue, .rank-green, .rank-yellow, .rank-orange, .rank-red {
+	font-weight: bold;
+	user-select: none;
+	cursor: default;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.rank-none, .rank-yellow, .rank-orange {color: #000;}
+.rank-purple, .rank-blue, .rank-green, .rank-red {color: #fff;}
+
+.rank-purple {background-color: #9c27b0;}
+.rank-blue {background-color: #2196f3;}
+.rank-green {background-color: #4caf50;}
+.rank-yellow {background-color: #ffeb3b;}
+.rank-orange {background-color: #ff9800;}
+.rank-red {background-color: #f44336;}
+
+.how-to-play {
+	border: none;
+    width: 128px;
+    height: 36px;
+    background-color: #e0e0e0;
+    font-size: 15px;
+    color: #000;
+    border-radius: 8%;
+    cursor: pointer;
+    box-shadow: 0 5px 6px rgba(0,0,0,0.19), 0 1px 3px rgba(0,0,0,0.23);
+}
+.how-to-play:hover {background-color: #bdbdbd;}
+.how-to-play:active {background-color: #8d8d8d;}
+
+.the-button {
+	border: none;
+    width: 180px;
+    height: 180px;
+    background-color: #f44336;
+    font-size: 24px;
+    text-align: center;
+	left: 50%;
+	top: 50%;
+	position: relative;
+	transform: translate(-50%,-50%);
+    color: #eee;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.the-button:hover {background-color:#d32f2f;}
+.the-button:active {background-color:#ba000d;}
+.the-button:disabled {background-color:#444;color:#777; transition: all 1s ease-out; cursor: default;}
+
+.the-button-base {
+    width:400px;
+    height:240px;  
+}
+
+
+.link {
+	text-decoration: inherit;
+    color: inherit;
+}
+
+.link:hover {
+	color: #2196f3;
+}
+
+.progress-indicator-container {
+	width: 400px;
+    height: 30px;
+}
+
+.progress-indicator-purple, .progress-indicator-blue, .progress-indicator-green, .progress-indicator-yellow, .progress-indicator-orange, .progress-indicator-red,.progress-indicator-dark-red {
+  height: 30px;
+  width: 33px;
+  display: inline;
+  float:left;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.progress-indicator-purple {background-color: #9c27b0;}
+.progress-indicator-blue {background-color: #2196f3;}
+.progress-indicator-green {background-color: #4caf50;}
+.progress-indicator-yellow {background-color: #ffeb3b;}
+.progress-indicator-orange {background-color: #ff9800;}
+.progress-indicator-red {background-color: #f44336;}
+.progress-indicator-dark-red {background-color: #b71c1c;width: 4px;}
+
+.progress-bar-0, .progress-bar-1, .progress-bar-2, .progress-bar-3, .progress-bar-4, .progress-bar-5, .progress-bar-6, .progress-bar-7, .progress-bar-8, .progress-bar-9, .progress-bar-10, .progress-bar-11, .progress-bar-12, .progress-bar-13 {
+	height: 8px;
+    width: 400px;
+    border-radius: 4px;
+    transition: all 1s ease-out;
+}
+
+.progress-bar-anim-0, .progress-bar-anim-1, .progress-bar-anim-2, .progress-bar-anim-3, .progress-bar-anim-4, .progress-bar-anim-5, .progress-bar-anim-6, .progress-bar-anim-7, .progress-bar-anim-8, .progress-bar-anim-9, .progress-bar-anim-10, .progress-bar-anim-11, .progress-bar-anim-12, .progress-bar-anim-13{
+	position: relative;
+	width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.progress-bar-anim-1 {
+	animation-name: progress-bar-anim-1;
+}
+
+.progress-bar-anim-2, .progress-bar-anim-3, .progress-bar-anim-4, .progress-bar-anim-5, .progress-bar-anim-6, .progress-bar-anim-7, .progress-bar-anim-8, .progress-bar-anim-9, .progress-bar-anim-10, .progress-bar-anim-11, .progress-bar-anim-12, .progress-bar-anim-13{ animation-name: progress-bar-anim;}
+
+@keyframes progress-bar-anim {
+	0% {left: 0%;} 1% {left: 1%;} 2% {left: 2%;} 3% {left: 3%;}	4% {left: 4%;} 5% {left: 5%;} 6% {left: 6%;} 7% {left: 7%;} 8% {left: 8%;} 9% {left: 9%;}
+    10% {left: 10%;} 11% {left: 11%;} 12% {left: 12%;} 13% {left: 13%;} 14% {left: 14%;} 15% {left: 15%;} 16% {left: 16%;} 17% {left: 17%;} 18% {left: 18%;} 19% {left: 19%;}
+    20% {left: calc(20% - 1px);} 21% {left: calc(21% - 1px);} 22% {left: calc(22% - 1px);} 23% {left: calc(23% - 1px);}	24% {left: calc(24% - 1px);} 25% {left: calc(25% - 1px);} 26% {left: calc(26% - 1px);} 27% {left: calc(27% - 1px);}	28% {left: calc(28% - 1px);} 29% {left: calc(29% - 1px);}
+    30% {left: calc(30% - 1px);} 31% {left: calc(31% - 1px);} 32% {left: calc(32% - 1px);} 33% {left: calc(33% - 1px);}	34% {left: calc(34% - 1px);} 35% {left: calc(35% - 1px);} 36% {left: calc(36% - 1px);} 37% {left: calc(37% - 1px);}	38% {left: calc(38% - 1px);} 39% {left: calc(39% - 1px);}
+    40% {left: calc(40% - 2px);} 41% {left: calc(41% - 2px);} 42% {left: calc(42% - 2px);} 43% {left: calc(43% - 2px);}	44% {left: calc(44% - 2px);} 45% {left: calc(45% - 2px);} 46% {left: calc(46% - 2px);} 47% {left: calc(47% - 2px);}	48% {left: calc(48% - 2px);} 49% {left: calc(49% - 2px);}
+    50% {left: calc(50% - 2px);} 51% {left: calc(51% - 2px);} 52% {left: calc(52% - 2px);} 53% {left: calc(53% - 2px);}	54% {left: calc(54% - 2px);} 55% {left: calc(55% - 2px);} 56% {left: calc(56% - 2px);} 57% {left: calc(57% - 2px);}	58% {left: calc(58% - 2px);} 59% {left: calc(59% - 2px);}
+    60% {left: calc(60% - 3px);} 61% {left: calc(61% - 3px);} 62% {left: calc(62% - 3px);} 63% {left: calc(63% - 3px);}	64% {left: calc(64% - 3px);} 65% {left: calc(65% - 3px);} 66% {left: calc(66% - 3px);} 67% {left: calc(67% - 3px);}	68% {left: calc(68% - 3px);} 69% {left: calc(69% - 3px);}
+    70% {left: calc(70% - 3px);} 71% {left: calc(71% - 3px);} 72% {left: calc(72% - 3px);} 73% {left: calc(73% - 3px);}	74% {left: calc(74% - 3px);} 75% {left: calc(75% - 3px);} 76% {left: calc(76% - 3px);} 77% {left: calc(77% - 3px);}	78% {left: calc(78% - 3px);} 79% {left: calc(79% - 3px);}
+    80% {left: calc(80% - 4px);} 81% {left: calc(81% - 4px);} 82% {left: calc(82% - 4px);} 83% {left: calc(83% - 4px);}	84% {left: calc(84% - 4px);} 85% {left: calc(85% - 4px);} 86% {left: calc(86% - 4px);} 87% {left: calc(87% - 4px);}	88% {left: calc(88% - 4px);} 89% {left: calc(89% - 4px);}
+    90% {left: calc(90% - 4px);} 91% {left: calc(91% - 4px);} 92% {left: calc(92% - 4px);} 93% {left: calc(93% - 4px);}	94% {left: calc(94% - 4px);} 95% {left: calc(95% - 4px);} 96% {left: calc(96% - 4px);} 97% {left: calc(97% - 4px);}	98% {left: calc(98% - 4px);} 99% {left: calc(99% - 4px);}
+    100% {left: calc(100% -5px);}
+}
+
+@keyframes progress-bar-anim-1 {
+	0% {left: 0%;}
+    25% {left: calc(25% - 2px);}
+    50% {left: calc(50% - 4px);}
+    75% {left: calc(75% - 6px);}
+    100% {left: calc(100% - 8px);}
+}
+
+
+.progress-bar-0 {background-color: #455a64; width: 14px;}
+.progress-bar-anim-0 {background-color: #e2f1f8;}
+.page-background-0 {background-color: #eee;color: #000;transition: all 1s ease-out;}
+
+
+.progress-bar-1 {background-color: #ce93d8; width: 16px;}
+.progress-bar-2 {background-color: #ce93d8; width: 49px;}
+.progress-bar-3 {background-color: #ce93d8; width: 82px;}
+.progress-bar-anim-1, .progress-bar-anim-2, .progress-bar-anim-3 {background-color: #ffc4ff;}
+.page-background-1, .page-background-2, .page-background-3 {background-color: #9c27b0;color: #fff;transition: all 1s ease-out;}
+
+
+.progress-bar-4 {background-color: #90caf9; width: 115px;}
+.progress-bar-5 {background-color: #90caf9; width: 148px;}
+.progress-bar-anim-4, .progress-bar-anim-5 {background-color: #c3fdff;}
+.page-background-4, .page-background-5 {background-color: #2196f3;color: #fff;transition: all 1s ease-out;}
+
+
+.progress-bar-6 {background-color: #a5d6a7; width: 181px;}
+.progress-bar-7 {background-color: #a5d6a7; width: 214px;}
+.progress-bar-anim-6, .progress-bar-anim-7 {background-color: #d7ffd9;}
+.page-background-6, .page-background-7 {background-color: #4caf50;color: #fff;transition: all 1s ease-out;}
+
+.progress-bar-8 {background-color: #c8b900; width: 247px;}
+.progress-bar-9 {background-color: #c8b900; width: 280px;}
+.progress-bar-anim-8, .progress-bar-anim-9 {background-color: #ffffcf;}
+.page-background-8, .page-background-9 {background-color: #ffeb3b;color: #000;transition: all 1s ease-out;}
+
+.progress-bar-10 {background-color: #ffcc80; width: 313px;}
+.progress-bar-11 {background-color: #ffcc80; width: 346px;}
+.progress-bar-anim-10, .progress-bar-anim-11 {background-color: #ffffb0;}
+.page-background-10, .page-background-11 {background-color: #ff9800;color: #000;transition: all 1s ease-out;}
+
+.progress-bar-12 {background-color: #ef9a9a; width: 379px;}
+.progress-bar-13 {background-color: #ef9a9a; width: 400px;}
+.progress-bar-anim-12, .progress-bar-anim-13 {background-color: #ffcccb;}
+.page-background-12, .page-background-13 {background-color: #f44336;color: #fff;transition: all 1s ease-out;}
+
+.who-is-watching {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s, visibility 1s;
+}
+
+.who-is-watching-enabled {
+	visibility: visible;
+	opacity: 1;
+	text-align: center;
+	top: 50px;
+	width: 400px;
+	height: 40px;
+	background-color: #fff;
+	color: #000;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: opacity 2s, visibility 2s;
+}
+
+.how-to-play-overlay {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s, visibility 1s;
+}
+
+.how-to-play-overlay-enabled {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 2s, visibility 2s;
+}
+
+.how-to-play-overlay-background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #00000099;
+	z-index: 2;
+}
+.how-to-play-card {
+	position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 380px;
+    height: 600px;
+	background-color: #fff;
+    border-radius: 20px;
+    color: #000;
+	padding-left: 16px;
+	padding-right: 16px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.how-to-play-title {
+	font-weight: lighter;
+    font-size: 32px;
+}
+
+.how-to-play-confirm {
+	position: absolute;
+	border: none;
+	bottom: 16px;
+	right: 16px;
+    width: 128px;
+    height: 36px;
+    background-color: #e0e0e0;
+    font-size: 15px;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 6px rgba(0,0,0,0.19), 0 1px 3px rgba(0,0,0,0.23);
+}
+.how-to-play-confirm:hover {background-color: #bdbdbd;}
+.how-to-play-confirm:active {background-color: #8d8d8d;}
+
+.login-overlay {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s, visibility 1s;
+}
+
+.login-overlay-enabled {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 2s, visibility 2s;
+}
+
+.login-overlay-background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #00000099;
+	z-index: 2;
+}
+.login-card {
+	position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 380px;
+    height: 250px;
+	background-color: #fff;
+    border-radius: 20px;
+    color: #000;
+	padding-left: 16px;
+	padding-right: 16px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.login-title {
+	font-weight: lighter;
+    font-size: 32px;
+	cursor: default;
+	user-select: none;
+}
+
+.login-text {
+	cursor: default;
+	user-select: none;
+}
+
+.login-textbox {
+	border: none;
+	left: 50%;
+	top: 20px;
+	text-align: center;
+	transform: translate(-50%,0);
+	position: relative;
+	background-color: #eee;
+	width: 300px;
+	height: 50px;
+	font-size: 20px;
+	color: #444;
+	box-shadow: 0 5px 6px rgba(0,0,0,0.19), 0 1px 3px rgba(0,0,0,0.23);
+}
+
+.login-confirm {
+	position: absolute;
+	border: none;
+	bottom: 16px;
+	right: 16px;
+    width: 128px;
+    height: 36px;
+    background-color: #e0e0e0;
+    font-size: 15px;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 6px rgba(0,0,0,0.19), 0 1px 3px rgba(0,0,0,0.23);
+}
+.login-confirm:hover {background-color: #bdbdbd;}
+.login-confirm:active {background-color: #8d8d8d;}
